@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Javascript Height Messuring</title>
+
+</head>
+<body style="margin: 0%;padding: 0%;">
+     <div class="first_header" id="fheight" style="display: flex;flex-direction: row;width: 100%;background-color: aqua;height: 2rem;"></div>
+     <div class="second_header" style="display: flex;flex-direction: row;width: 100%;background-color: black;height: 2rem;"></div>
+     <div class="third_header"> </div>
+
+     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+     <script>
+          var fheader = document.getElementsByClassName('first_header');
+          var sheader = document.getElementsByClassName('second_header');
+          var third  = document.getElementsByClassName('third_header');
+
+          const fh = $('.first_header').height();
+          const fw = $('.first_header').width();
+
+          const sh = $('.second_header').height();
+          const sw = $('.second_header').width();
+
+          console.log("first header height and width");
+          console.log(fh+" "+fw);
+          console.log("second header height and width");
+          console.log(sh+" "+sw);
+
+     </script>
+</body>
+</html>
